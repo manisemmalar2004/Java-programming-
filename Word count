@@ -1,0 +1,15 @@
+public class WordCount {
+    public static void main(String[] args) {
+        String text = "Learn Java step by step and build cool projects";
+        
+        // Split the text by spaces (one or more spaces)
+        // \\s+ handles multiple spaces between words
+        String[] words = text.trim().split("\\s+");
+        
+        // Count the number of items in the array
+        int count = words.length;
+        
+        System.out.println("Original Text: " + text);
+        System.out.println("Total Word Count: " + count);
+    }
+}
